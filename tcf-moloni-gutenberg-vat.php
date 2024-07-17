@@ -6,9 +6,9 @@ Version: 1.0
 Author: The Creative Farm
 */
 
-add_action("plugins_loaded", "define_vat_field_constant", 1);
+add_action("plugins_loaded", "tcf_define_vat_field_constant", 1);
 
-function define_vat_field_constant()
+function tcf_define_vat_field_constant()
 {
     if (!defined("VAT_FIELD")) {
         define("VAT_FIELD", "_billing_vat");
